@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#312e81">
+<title>師德英檢聽寫王 - Level A</title>
+<style>
+:root{--ink:#211b45;--muted:#6e6990;--purple:#7657e8;--indigo:#4338ca;--pink:#ec8acb;--yellow:#ffd84d;--green:#32c48d;--red:#ef6477}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:ui-rounded,"Trebuchet MS","Noto Sans TC",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 15%,#8c83ed 0,transparent 34%),radial-gradient(circle at 90% 10%,#f3a6d0 0,transparent 32%),linear-gradient(135deg,#171b55,#4936a0 52%,#a04d9c);padding:24px 14px 40px}
+button,input{font:inherit}button{cursor:pointer;border:0}.app{width:min(900px,100%);margin:auto}.glass{background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.62);box-shadow:0 24px 70px rgba(19,12,68,.28);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:38px;padding:clamp(22px,5vw,46px)}
+.topline{display:flex;justify-content:center;align-items:center;gap:9px;margin-bottom:14px}.badge{display:inline-flex;align-items:center;gap:7px;background:#eeeaff;color:#6044cb;border-radius:999px;padding:8px 14px;font-size:12px;font-weight:900;letter-spacing:1.3px}.spark{color:#f4b928}
+h1{font-size:clamp(30px,6vw,48px);line-height:1.12;text-align:center;margin:12px 0 8px;font-weight:1000;letter-spacing:-1.5px;color:#30236d}.subtitle{text-align:center;color:var(--muted);margin:0 0 30px;font-size:15px}
+.part{margin:22px 0 26px}.part-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}.part-icon{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;color:white;font-weight:900;background:linear-gradient(135deg,#7864ed,#b36ee5);box-shadow:0 6px 16px #7e62db44}.part-head h2{font-size:17px;margin:0;color:#392c77}.part-head small{color:#8a83a9;font-weight:600;margin-left:auto}.stage-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:10px}.stage-btn{border:1px solid #e7e2fb;background:rgba(255,255,255,.78);border-radius:17px;padding:14px 10px;color:#5542a2;font-weight:900;transition:.2s;box-shadow:0 4px 12px #47338b0b}.stage-btn:hover{transform:translateY(-3px);background:#f0edff;border-color:#b8a9f5;box-shadow:0 10px 18px #47338b18}.stage-btn small{display:block;font-size:11px;color:#9289b6;font-weight:700;margin-top:4px}
+.footer-note{text-align:center;color:#827ba2;font-size:12px;margin:24px 0 0;line-height:1.7}
+.hidden{display:none!important}.game-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}.back-btn{background:#f0edff;color:#624bc0;border-radius:13px;padding:10px 14px;font-weight:800}.stage-label{font-weight:1000;color:#5542a2;letter-spacing:1px;font-size:13px;text-align:center}.progress-meta{display:flex;justify-content:space-between;color:#7d769d;font-size:13px;font-weight:800;margin:0 2px 9px}.progress-track{height:12px;background:#e9e5f6;border-radius:99px;overflow:hidden;margin-bottom:25px}.progress-fill{height:100%;width:0;background:linear-gradient(90deg,#7b65ec,#36c99a);border-radius:99px;transition:width .45s ease}
+.stats{display:flex;justify-content:center;gap:10px;margin-bottom:22px}.stat{background:#f2efff;border-radius:14px;padding:8px 14px;text-align:center;min-width:94px}.stat strong{display:block;color:#5140a7;font-size:18px}.stat span{font-size:10px;color:#8b83ad;font-weight:900;letter-spacing:.7px}
+.question-card{background:linear-gradient(145deg,#fff,#f5f1ff);border:1px solid #e7e0ff;border-radius:29px;padding:clamp(24px,5vw,42px) 20px;text-align:center;box-shadow:inset 0 1px white,0 12px 28px #47338b0b}.q-label{color:#9b91bd;font-size:11px;font-weight:1000;letter-spacing:2px}.hint{font-size:clamp(32px,7vw,48px);font-weight:1000;color:#382a7e;margin:12px 0 8px}.hint-sub{font-size:13px;color:#9a91b8}
+.listen-btn{margin:24px auto 20px;width:76px;height:76px;border-radius:25px;background:linear-gradient(145deg,#ffdf66,#ffb82e);color:#5b3b00;font-size:30px;box-shadow:0 9px 0 #e59b1b,0 15px 25px #d9943233;animation:float 2.2s ease-in-out infinite;transition:transform .12s}.listen-btn:active{transform:scale(.92) translateY(5px);box-shadow:0 3px 0 #e59b1b}.listen-caption{color:#958caf;font-size:12px;font-weight:800;margin-top:-8px}
+.answer-wrap{max-width:500px;margin:25px auto 0}.answer-input{width:100%;border:2px solid #ded8f3;border-radius:17px;padding:17px 18px;text-align:center;font-size:21px;font-weight:800;color:#33256e;background:white;outline:none;transition:.2s}.answer-input:focus{border-color:#8b70ed;box-shadow:0 0 0 4px #8b70ed22}.answer-input:disabled{background:#fff0f1;color:#c23c52;border-color:#f3a1ad}.answer-input::placeholder{color:#c0bad3;font-size:15px}.submit-btn{width:100%;margin-top:12px;border-radius:16px;padding:16px;background:linear-gradient(100deg,#6553dc,#8c58df);color:white;font-weight:1000;letter-spacing:1px;box-shadow:0 7px 0 #4934a6;transition:.15s}.submit-btn:active{transform:translateY(4px);box-shadow:0 3px 0 #4934a6}.submit-btn:disabled{opacity:.55;cursor:not-allowed}
+.feedback{min-height:24px;margin-top:13px;color:#837ba1;font-size:13px;font-weight:800}.bounce{animation:bounce .45s}.toast{position:fixed;top:18px;left:50%;transform:translate(-50%,-130px);z-index:10;background:#fff;border-radius:16px;padding:13px 22px;font-weight:1000;box-shadow:0 12px 35px #1c145555;transition:transform .35s cubic-bezier(.2,1.5,.5,1);white-space:nowrap}.toast.show{transform:translate(-50%,0)}.toast.good{color:#15996a}.toast.bad{color:#d94258}
+.result-icon{font-size:58px;text-align:center;margin:6px 0}.result-title{text-align:center;color:#342775;font-size:30px;font-weight:1000;margin:0}.result-score{text-align:center;font-size:clamp(54px,12vw,82px);font-weight:1000;color:#6d56db;margin:6px 0}.result-caption{text-align:center;color:#8c84a8;margin-bottom:22px}.result-stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px 0 28px}.result-stats .stat{min-width:115px}.review{margin:25px 0}.review h3{color:#443584;margin-bottom:12px}.mistake-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:9px}.mistake{display:flex;align-items:center;justify-content:space-between;gap:8px;background:#fff1f2;border:1px solid #ffd5dc;border-radius:14px;padding:11px 12px;color:#a73d51;text-align:left}.mistake strong{display:block;font-size:15px}.mistake small{display:block;color:#b97885;font-size:12px;margin-top:2px}.mistake button{background:#ffe0e5;border-radius:9px;padding:7px}.empty-review{text-align:center;color:#20996e;background:#e8fbf3;padding:18px;border-radius:16px;font-weight:800}
+.result-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.next-btn,.home-btn{padding:16px 12px;border-radius:16px;font-weight:1000;letter-spacing:.5px}.next-btn{background:linear-gradient(100deg,#a3e85c,#39c98b);color:#174e37;box-shadow:0 6px 0 #269b6a}.home-btn{background:#eeeaff;color:#5c48b4}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}@keyframes bounce{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}50%{transform:translateX(7px)}75%{transform:translateX(-4px)}}
+@media(max-width:520px){body{padding:12px 9px 24px}.glass{border-radius:28px;padding:22px 16px}.game-top{flex-wrap:wrap}.result-actions{grid-template-columns:1fr}.stats{gap:6px}.stat{min-width:82px;padding:8px 9px}.stage-grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div class="app">
+<section id="view-menu" class="glass">
+  <div class="topline"><span class="badge"><span class="spark">✦</span> SHIH DE ENGLISH TEST <span class="spark">✦</span></span></div>
+  <h1>師德英檢聽寫王</h1>
+  <p class="subtitle">LEVEL A · LISTEN · SPELL · SHINE!</p>
+  <div id="parts"></div>
+  <p class="footer-note">每關 20 個單字 · 聽英文、看中文、拼出正確單字<br>準備好了嗎？選擇一個關卡開始挑戰！</p>
+</section>
+
+<section id="view-game" class="glass hidden">
+  <div class="game-top">
+    <button class="back-btn" id="quitBtn">← 主選單</button>
+    <div class="stage-label" id="stageName">P1 - STAGE 1</div>
+    <div class="stage-label" id="counter">1 / 20</div>
+  </div>
+  <div class="progress-meta"><span>CHALLENGE PROGRESS</span><span id="accuracy">正確率 0%</span></div>
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="stats">
+    <div class="stat"><strong id="correctStat">0</strong><span>答對題數</span></div>
+    <div class="stat"><strong id="wrongStat">0</strong><span>需複習</span></div>
+    <div class="stat"><strong id="streakStat">0</strong><span>連續答對</span></div>
+  </div>
+  <div class="question-card" id="questionCard">
+    <div class="q-label">LISTEN CAREFULLY & SPELL IT!</div>
+    <div class="hint" id="hint">動作</div>
+    <div class="hint-sub">請聽發音，輸入正確的英文單字</div>
+    <button class="listen-btn" id="listenBtn" aria-label="播放英文發音">🔊</button>
+    <div class="listen-caption">點擊播放英文發音</div>
+    <div class="answer-wrap">
+      <input id="answerInput" class="answer-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type the English word here...">
+      <button id="submitBtn" class="submit-btn">CHECK ANSWER ↗</button>
+      <div id="feedback" class="feedback" aria-live="polite">按 Enter 也可以送出答案</div>
+    </div>
+  </div>
+</section>
+
+<section id="view-result" class="glass hidden">
+  <div class="result-icon" id="resultIcon">🏆</div>
+  <h2 class="result-title">STAGE COMPLETED!</h2>
+  <div class="result-score" id="resultScore">100%</div>
+  <div class="result-caption" id="resultCaption">太棒了！完成本關挑戰！</div>
+  <div class="result-stats">
+    <div class="stat"><strong id="resultCorrect">0/20</strong><span>答對題數</span></div>
+    <div class="stat"><strong id="resultMistakes">0</strong><span>錯題數</span></div>
+    <div class="stat"><strong id="resultAttempts">0</strong><span>作答次數</span></div>
+  </div>
+  <div class="review">
+    <h3>📝 REVIEW MISTAKES · 錯題複習</h3>
+    <div id="mistakeList"></div>
+  </div>
+  <div class="result-actions">
+    <button class="next-btn" id="nextBtn">NEXT CHALLENGE →</button>
+    <button class="home-btn" id="homeBtn">⌂ BACK TO HOME</button>
+  </div>
+</section>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+/* 題庫依使用者提供的《師德英檢 Level-A 應考手冊》第25–28頁整理。
+   同一格中以斜線並列的不同英文詞，拆成個別題目。 */
+const FULL_DATABASE = {
+P1: [
+["act","動作"],["actor","演員"],["actress","女演員"],["address","地址"],["adult","成人"],["advance","進展"],["advice","勸告"],["afterwards","後來"],["agreement","同意"],["ahead","向前"],["aim","目標"],["airline","航線"],["alone","獨自"],["along","沿著"],["although","雖然"],["among","在……之中"],["angel","天使"],["angle","角度"],["apartment","公寓"],["appear","出現"],["armchair","扶手椅"],["army","軍隊"],["article","文章"],["attention","注意力"],["avoid","避免"],["awake","醒著的"],["away","遠離"],["background","背景"],["balcony","陽台"],["ballet","芭蕾舞"],["bark","吠叫"],["barn","穀倉"],["basic","基本的"],["beard","鬍鬚"],["beat","敲擊"],["begin","開始"],["beginner","初學者"],["bend","彎曲"],["blood","血液"],["bleed","流血"],["boil","煮沸"],["boxing","拳擊"],["boxer","拳擊手"],["branch","樹枝"],["brave","勇敢的"],["breath","呼吸"],["breeze","微風"],["brick","磚塊"],["broad","寬廣的"],["button","鈕扣"],["cabin","小屋"],["cancer","癌症"],["careful","小心的"],["careless","粗心的"],["caterpillar","毛毛蟲"],["cereal","麥片"],["certain","確信的"],["cheat","欺騙"],["cheek","臉頰"],["chest","胸部"],["chief","首領"],["cigarette","香菸"],["coast","海岸"],["cockroach","蟑螂"],["collect","收集"],["comfort","安慰"],["concern","關心"],["condition","狀況"],["continue","繼續"],["convenient","便利的"],["conversation","對話"],["cough","咳嗽"],["count","數"],["cream","奶油"],["cross","越過"],["crown","皇冠"],["daily","每日的"],["dangerous","危險的"],["dark","黑暗的"],["deaf","耳聾的"],["decide","決定"]
+],
+P2: [
+["decrease","減少"],["deliver","投遞"],["department","部門"],["desert","沙漠"],["dessert","點心"],["design","設計"],["dial","撥號"],["different","不同的"],["difficult","困難的"],["direction","指示／方向"],["discover","發現"],["discuss","討論"],["dolphin","海豚"],["drug","藥物"],["during","在……期間"],["earn","賺取"],["either","任一個"],["endless","無盡的"],["enemy","敵人"],["energy","活力"],["enough","足夠的"],["enter","進入"],["equal","相等的"],["even","甚至"],["event","事件"],["expect","期望"],["expensive","昂貴的"],["experience","經驗"],["factory","工廠"],["fail","失敗"],["fair","公平的"],["familiar","熟悉的"],["fault","錯誤"],["fear","害怕"],["feather","羽毛"],["feed","餵養"],["fence","柵欄"],["field","田野"],["flight","飛行"],["flute","長笛"],["force","力量"],["forward","向前"],["furniture","家具"],["future","未來"],["gain","獲得"],["garage","車庫"],["gather","聚集"],["graceful","幽雅的"],["grocery","雜貨店"],["habit","習慣"],["hammer","鐵鎚"],["handkerchief","手帕"],["happen","發生"],["healthy","健康的"],["history","歷史"],["hobby","嗜好"],["holiday","假日"],["honest","誠實的"],["hope","希望"],["hopeless","絕望的"],["hospital","醫院"],["housewife","家庭主婦"],["however","然而"],["huge","巨大的"],["hungry","飢餓的"],["idea","主意"],["impolite","無禮的"],["important","重要的"],["improve","改進"],["include","包括"],["increase","增加"],["interest","興趣"],["introduce","介紹"],["invite","邀請"],["island","島嶼"],["jewel","珠寶"],["journey","旅程"],["jungle","叢林"],["kick","踢"],["knowledge","知識"]
+],
+P3: [
+["language","語言"],["lid","蓋子"],["lift","舉起"],["load","裝載"],["loyal","忠誠的"],["machine","機器"],["magazine","雜誌"],["magnet","磁鐵"],["manner","方式"],["measure","測量"],["medicine","藥品"],["medium","中等的"],["message","訊息"],["metal","金屬"],["microwave","微波爐"],["mosquito","蚊子"],["mud","泥巴"],["mug","馬克杯"],["museum","博物館"],["napkin","餐巾"],["narrow","狹窄的"],["nation","國家"],["nature","自然"],["necessary","必要的"],["neither","也不"],["nephew","姪子／外甥"],["niece","姪女／外甥女"],["nervous","緊張的"],["normal","正常的"],["notice","注意"],["order","訂購"],["owner","所有者"],["palm","手掌"],["partner","伙伴"],["past","過去"],["peace","和平"],["peanut","花生"],["percent","百分率"],["perhaps","大概"],["photographer","攝影師"],["pipe","水管／煙斗"],["pirate","海盜"],["plastic","塑膠"],["pleasant","舒適的"],["pour","倒／灌"],["press","壓"],["pressure","壓力"],["pride","自豪"],["probably","大概"],["proud","驕傲的"],["puppet","木偶"],["quiet","安靜的"],["quite","相當"],["race","種族／比賽"],["railway","鐵路"],["raise","舉起"],["rather","相當"],["receive","接受"],["record","紀錄"],["relax","放鬆"],["remind","提醒"],["rent","租金"],["repair","修理"],["repeat","重覆"],["reply","答覆"],["respect","尊重"],["result","結果"],["return","返回"],["rise","上升"],["risk","危機"],["rocket","火箭"],["romantic","浪漫的"],["rooster","公雞"],["rope","繩子"],["rough","粗糙的"],["rule","規則"]
+],
+P4: [
+["safe","安全的"],["save","拯救"],["sausage","香腸"],["scare","驚嚇"],["scarf","圍巾"],["secret","秘密"],["section","部分"],["serious","嚴重的"],["serve","服侍"],["shadow","陰影"],["sheet","床單"],["shrimp","蝦子"],["silent","沈默的"],["silver","銀色的"],["similar","相似的"],["skill","技巧"],["sneakers","運動鞋"],["squirrel","松鼠"],["stationery","文具"],["steel","鋼"],["storm","暴風"],["strange","奇怪的"],["stream","溪流"],["suggest","建議"],["support","支持"],["swimsuit","泳衣"],["tale","傳說"],["taste","滋味"],["tent","帳篷"],["terrible","糟糕的"],["thorough","徹底的"],["throat","喉嚨"],["thumb","拇指"],["tongue","舌頭"],["towel","毛巾"],["tower","塔"],["trust","信任"],["uncomfortable","不舒服的"],["unless","除非"],["unusual","不尋常的"],["upload","上載"],["useless","無用的"],["vacation","休假"],["valley","山谷"],["visitor","訪客"],["waterfall","瀑布"],["weather","天氣"],["wedding","結婚典禮"],["whale","鯨魚"],["whether","是否"],["wildlife","野生動物"],["without","沒有"],["wolf","狼"],["worse","更壞的"],["worst","最壞的"],["worth","值得"],["worthwhile","值得做的"],["worthless","無價值的"],["wrist","手腕"],["yell","吼叫"],["yogurt","優格"],["youth","青少年時期"]
+]};
+
+const PARTS=[{id:"P1",name:"PART 1",range:"A – D",color:"A"},{id:"P2",name:"PART 2",range:"E – K",color:"B"},{id:"P3",name:"PART 3",range:"L – R",color:"C"},{id:"P4",name:"PART 4",range:"S – Z",color:"D"}];
+const STAGE_SIZE=20;
+let current={part:"P1",stage:0,words:[],index:0,correct:0,attempts:0,streak:0,wrong:[],wrongSet:new Set(),firstTryCorrect:0,locked:false};
+let toastTimer=null;
+const $=id=>document.getElementById(id);
+function stagesFor(part){const list=FULL_DATABASE[part];const stages=[];for(let i=0;i<list.length;i+=STAGE_SIZE)stages.push(list.slice(i,i+STAGE_SIZE));return stages}
+function buildMenu(){
+ const root=$("parts");root.innerHTML="";
+ PARTS.forEach((p,pi)=>{const stages=stagesFor(p.id);const section=document.createElement("div");section.className="part";
+ const head=document.createElement("div");head.className="part-head";head.innerHTML=`<div class="part-icon">${pi+1}</div><h2>${p.name} <span style="color:#9a91b8;font-weight:700">(${p.range})</span></h2><small>${FULL_DATABASE[p.id].length} WORDS · ${stages.length} STAGES</small>`;section.appendChild(head);
+ const grid=document.createElement("div");grid.className="stage-grid";
+ stages.forEach((words,i)=>{const b=document.createElement("button");b.className="stage-btn";b.innerHTML=`${p.id} · S${i+1}<small>${words.length} WORDS</small>`;b.addEventListener("click",()=>startGame(p.id,i));grid.appendChild(b)});section.appendChild(grid);root.appendChild(section)});
+}
+function showView(name){["menu","game","result"].forEach(v=>$("view-"+v).classList.toggle("hidden",v!==name));window.scrollTo({top:0,behavior:"smooth"})}
+function startGame(part,stage){
+ const words=stagesFor(part)[stage];current={part,stage,words,index:0,correct:0,attempts:0,streak:0,wrong:[],wrongSet:new Set(),firstTryCorrect:0,locked:false};
+ showView("game");renderQuestion();setTimeout(()=>$("answerInput").focus(),120);
+}
+function renderQuestion(){
+ const item=current.words[current.index];if(!item){finishGame();return}
+ current.locked=false;$("answerInput").dataset.failed="";$("stageName").textContent=`${current.part} - STAGE ${current.stage+1}`;$("counter").textContent=`${current.index+1} / ${current.words.length}`;
+ $("hint").textContent=item[1];$("answerInput").value="";$("answerInput").disabled=false;$("submitBtn").disabled=false;$("submitBtn").textContent="CHECK ANSWER ↗";$("feedback").textContent="按 Enter 也可以送出答案";
+ $("progressFill").style.width=`${current.index/current.words.length*100}%`;updateStats();
+}
+function updateStats(){
+ $("correctStat").textContent=current.correct;$("wrongStat").textContent=current.wrong.length;$("streakStat").textContent=current.streak;
+ const pct=current.index?Math.round(current.correct/current.index*100):0;$("accuracy").textContent=`正確率 ${pct}%`;
+}
+function speak(text,rate=0.82){
+ if(!("speechSynthesis" in window)){showToast("此瀏覽器不支援語音功能","bad");return}
+ window.speechSynthesis.cancel();const utter=new SpeechSynthesisUtterance(text);utter.lang="en-US";utter.rate=rate;utter.pitch=1.04;
+ const voices=window.speechSynthesis.getVoices();const preferred=voices.find(v=>/Google US English/i.test(v.name))||voices.find(v=>v.lang==="en-US"&&/female|samantha|ava|zira/i.test(v.name))||voices.find(v=>v.lang==="en-US");if(preferred)utter.voice=preferred;
+ window.speechSynthesis.speak(utter);
+}
+function showToast(message,type){const t=$("toast");t.textContent=message;t.className=`toast ${type||""} show`;clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove("show"),1500)}
+const praise=["Wow! That is excellent!","Amazing work!","Fantastic! You got it!","Wonderful! Keep it up!","Superb! Great job!"];
+function submitAnswer(){
+ if(current.locked)return;const item=current.words[current.index];const typed=$("answerInput").value.trim().toLowerCase();if(!typed){$("feedback").textContent="請先輸入英文單字喔！";$("answerInput").focus();return}
+ current.attempts++;if(typed===item[0].toLowerCase()){
+  current.correct++;current.streak++;if(current.wrongSet.has(current.index)===false&&$("answerInput").dataset.failed!=="1")current.firstTryCorrect++;
+  current.locked=true;$("answerInput").disabled=true;$("submitBtn").disabled=true;$("feedback").textContent="✓ Correct! "+praise[Math.floor(Math.random()*praise.length)];showToast("✨ PERFECT!","good");speak(praise[Math.floor(Math.random()*praise.length)],0.92);
+  $("progressFill").style.width=`${(current.index+1)/current.words.length*100}%`;updateStats();setTimeout(()=>{current.index++;renderQuestion()},1800);
+ }else{
+  if(!current.wrongSet.has(current.index)){current.wrongSet.add(current.index);current.wrong.push({word:item[0],hint:item[1],index:current.index})}
+  current.streak=0;$("answerInput").classList.remove("bounce");void $("answerInput").offsetWidth;$("answerInput").classList.add("bounce");showToast("❌ TRY AGAIN","bad");updateStats();
+  if($("answerInput").dataset.failed!=="1"){
+   $("answerInput").dataset.failed="1";$("feedback").textContent="再聽一次，還有一次機會！";speak(`Not quite. Oh! Try again next time! Listen once more. ${item[0]}`,0.84);$("answerInput").value="";$("answerInput").focus();
+  }else{
+   current.locked=true;$("answerInput").disabled=true;$("submitBtn").disabled=true;$("answerInput").value=item[0];$("answerInput").style.background="#fff0f1";$("answerInput").style.color="#c23c52";$("feedback").textContent=`正確答案：${item[0]} · ${item[1]}`;speak(`The answer is ${item[0]}. Oh! Try again next time!`,0.86);
+   setTimeout(()=>{current.index++;$("answerInput").dataset.failed="";$("answerInput").style.background="";$("answerInput").style.color="";renderQuestion()},4500);return;
+  }
+ }
+}
+function finishGame(){
+ window.speechSynthesis?.cancel();showView("result");const pct=Math.round(current.correct/current.words.length*100);
+ $("resultScore").textContent=pct+"%";$("resultCorrect").textContent=`${current.correct}/${current.words.length}`;$("resultMistakes").textContent=current.wrong.length;$("resultAttempts").textContent=current.attempts;
+ $("resultIcon").textContent=pct>=90?"🏆":pct>=70?"🌟":"💪";$("resultCaption").textContent=pct===100?"PERFECT! 全部答對，太厲害了！":pct>=80?"表現很棒！繼續保持！":pct>=60?"做得不錯，再複習錯題會更進步！":"別氣餒，多練習幾次就會越來越熟練！";
+ const list=$("mistakeList");list.innerHTML="";
+ if(!current.wrong.length){list.innerHTML='<div class="empty-review">🎉 太棒了！本關沒有錯題！</div>'}
+ else{const grid=document.createElement("div");grid.className="mistake-list";current.wrong.forEach(m=>{const card=document.createElement("div");card.className="mistake";card.innerHTML=`<div><strong>${escapeHtml(m.word)}</strong><small>${escapeHtml(m.hint)}</small></div><button aria-label="播放 ${escapeHtml(m.word)} 發音">🔊</button>`;card.querySelector("button").addEventListener("click",()=>speak(m.word));card.addEventListener("click",e=>{if(e.target.tagName!=="BUTTON")speak(m.word)});grid.appendChild(card)});list.appendChild(grid)}
+ const all=stagesFor(current.part);const hasNext=current.stage+1<all.length||PARTS.findIndex(p=>p.id===current.part)<PARTS.length-1;$("nextBtn").disabled=!hasNext;$("nextBtn").style.opacity=hasNext?"1":".45";$("nextBtn").textContent=hasNext?"NEXT CHALLENGE →":"ALL DONE!";
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function nextChallenge(){
+ const all=stagesFor(current.part);let p=current.part,s=current.stage+1;if(s>=all.length){const pi=PARTS.findIndex(x=>x.id===p);if(pi>=PARTS.length-1)return;p=PARTS[pi+1].id;s=0}startGame(p,s)
+}
+$("listenBtn").addEventListener("click",()=>speak(current.words[current.index]?.[0]||""));
+$("submitBtn").addEventListener("click",submitAnswer);
+$("answerInput").addEventListener("keydown",e=>{if(e.key==="Enter")submitAnswer()});
+$("answerInput").addEventListener("input",()=>{$("answerInput").dataset.failed=$("answerInput").dataset.failed||"";$("answerInput").style.background="";$("answerInput").style.color=""});
+$("quitBtn").addEventListener("click",()=>{window.speechSynthesis?.cancel();showView("menu")});
+$("homeBtn").addEventListener("click",()=>showView("menu"));
+$("nextBtn").addEventListener("click",nextChallenge);
+buildMenu();
+if("speechSynthesis" in window)window.speechSynthesis.getVoices();
+</script>
+</body>
+</html>
